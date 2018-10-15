@@ -12,7 +12,7 @@ router.get('/picture/:name', (req, res, next) => returnResult(req, res));
 
 async function returnResult(req, res) {
     try {
-    		const data = await getPictureInfo(req.params.name);
+    		const data = await getPictureInfo(req.body.picture);
         res.send(data);    
     } catch (e) {
         console.log(e);
