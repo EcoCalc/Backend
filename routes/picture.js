@@ -8,7 +8,7 @@ const app = new Clarifai.App({
 });
 
 
-router.get('/picture/', (req, res, next) => returnResult(req, res));
+router.get('/picture', (req, res, next) => returnResult(req, res));
 
 async function returnResult(req, res) {
     try {
