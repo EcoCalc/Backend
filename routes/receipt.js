@@ -5,12 +5,12 @@ var express = require('express');
 var router = express.Router();
 const api_url = "https://trackapi.nutritionix.com/v2/natural/nutrients"
 
-router.get('/receipt', (req, res, next) => returnResult(req, res));
+router.post('/receipt', (req, res, next) => returnResult(req, res));
 
 async function returnResult(req, res) {
     try {
-        let sampleString = "for breakfast i ate 3 eggs, bacon and cheese";
-        const data = await getFoodItems(sampleString);
+        // let sampleString = "for breakfast i ate 3 eggs, bacon and cheese";
+        const data = await getFoodItems(req.body.query);
         console.log(data)
         res.send(data);
     } catch (e) {
