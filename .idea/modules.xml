@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/EcoCal-Backend.iml" filepath="$PROJECT_DIR$/.idea/EcoCal-Backend.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Backend.iml" filepath="$PROJECT_DIR$/.idea/Backend.iml" />
+>>>>>>> 678ce6912b414540d716b54d2de6df75638c793d
     </modules>
   </component>
 </project>

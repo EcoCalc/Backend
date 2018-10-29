@@ -5,7 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var pictureRouter = require('./routes/picture');
+<<<<<<< HEAD
 var RecScannerRouter = require('./routes/RecScanner')
+=======
+var receiptRouter = require('./routes/receipt');
+>>>>>>> 678ce6912b414540d716b54d2de6df75638c793d
 
 var app = express();
 
@@ -20,7 +24,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', pictureRouter);
+<<<<<<< HEAD
 app.use('/', RecScannerRouter)
+=======
+app.use('/', receiptRouter);
+>>>>>>> 678ce6912b414540d716b54d2de6df75638c793d
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
